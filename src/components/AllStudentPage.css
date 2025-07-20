@@ -1,0 +1,42 @@
+.all {
+  color: #83c727;
+  padding-left: 40px;
+  padding-top: 80px;
+}
+.search_bar {
+  margin-top: 70px;
+  margin-left: 600px;
+  background-image: url("src/assets/search-line 2.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 16px 16px;
+
+  padding-left: 36px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.all_student {
+  display: flex;
+}
+.addbtn {
+  color: white;
+  background-color: #83c727;
+  margin-left: 20px;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 20px;
+  gap: 10px;
+
+  width: 179px;
+  height: 36px;
+  margin-top: 70px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.add_img {
+  width: 16.67px;
+  height: 15.83px;
+}

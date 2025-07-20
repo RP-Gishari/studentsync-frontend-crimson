@@ -34,10 +34,9 @@ function AddStudentForm({ onCancel }) {
       <p className="new">
         <b>Add new student</b>
       </p>
-      <form className="add_student-form" onSubmit={handleSubmit}>
+      <form className="add_student_form" onSubmit={handleSubmit}>
         <div className="form_grid">
           <input
-            className="small_input"
             name="first_name"
             placeholder="First Name"
             value={formData.first_name}
@@ -45,30 +44,23 @@ function AddStudentForm({ onCancel }) {
             required
           />
           <input
-            className="small_input"
             name="last_name"
             placeholder="Last Name"
             value={formData.last_name}
             onChange={handleChange}
             required
           />
+
           <input
-            className="small_input"
-            name="date_of_birth"
-            type="date"
-            value={formData.date_of_birth}
-            onChange={handleChange}
-            required
-          />
-          <input
-            className="small_input"
             name="student_id"
             placeholder="Student ID"
             value={formData.student_id}
             onChange={handleChange}
             required
           />
+          <br />
           <input
+            className="large_input"
             name="email"
             type="email"
             placeholder="Email"
@@ -76,14 +68,18 @@ function AddStudentForm({ onCancel }) {
             onChange={handleChange}
             required
           />
+          <br />
           <input
+            className="large_input"
             name="contact_number"
             placeholder="Contact Number"
             value={formData.contact_number}
             onChange={handleChange}
             required
           />
+          <br />
           <input
+            className="large_input"
             name="enrollment_date"
             type="date"
             value={formData.enrollment_date}

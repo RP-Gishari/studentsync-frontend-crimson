@@ -3,9 +3,8 @@
 }
 .add_student_form {
   background: #fff;
-  padding: 30px;
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   font-family: "Inter", sans-serif;
 }
 
@@ -17,9 +16,10 @@
 
 .add_student_form input {
   padding: 12px;
+  gap: 10px;
   font-size: 14px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 0.5px solid;
+  border-radius: 10px;
   background-color: #f9f9f9;
 }
 
@@ -66,7 +66,6 @@
   margin-right: 180px;
   margin-bottom: 30px;
 }
-.small_nput {
-  width: 342px;
-  height: 47px;
+.large_input {
+  width: 699px;
 }

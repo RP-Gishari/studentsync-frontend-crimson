@@ -7,14 +7,13 @@ const StudentList = () => {
 
   useEffect(() => {
     fetchStudents();
-  }, []);
+  }, [fetchStudents]);
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;
 
   return (
     <div>
-      <h2>Student List</h2>
       <StudentTable students={students} />
     </div>
   );
