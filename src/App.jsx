@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cards from "./components/cards";
 import StudentList from "./pages/StudentList";
 import StudentTable from "./components/StudentTable";
-import AddStudent from "./components/AddStudent";
 import AllStudentPage from "./components/AllStudentPage";
+import AddStudent from "./components/AddStudent";
+
 import "./App.css";
 
 const App = () => {
@@ -13,9 +14,6 @@ const App = () => {
       <div className="app-container">
         <div>
           <AllStudentPage />
-        </div>
-        <div>
-          <AddStudent />
         </div>
 
         <main className="main-content">
