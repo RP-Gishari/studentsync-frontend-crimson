@@ -1,9 +1,8 @@
 
 .navbar-container{
-max-width: 100%;
-height: auto;
-display: flex;
-padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo{
@@ -78,6 +77,7 @@ color: #686868;
 }
 
 .all-student{
+  display: flex;
   width: 177px;
 height: 56px;
 top: 44px;
@@ -92,7 +92,7 @@ padding-left: 40px;
 border: solid 3px #83C727
 }
 
-.navbar-add{
+.navbar-all{
 font-family: Poppins, sans-serif;
 font-weight: 600px;
 font-style: SemiBold;
@@ -109,6 +109,7 @@ color: #83C727
   display: flex;
   margin-top: 40px;
   margin-bottom: 100px;
+  gap: 10px;
 }
 .text-container {
   position: relative;
@@ -116,6 +117,7 @@ color: #83C727
   height: 388px;
   margin-top: 44px;
   margin-left: 30px;
+
 }
 
 .h3-hero {
@@ -220,7 +222,7 @@ color: #83C727
   width: 48%;
   height: auto;
   top: 10px;
-  left: 60px;
+  left: 50px;
   position: relative;
 }
 
@@ -234,7 +236,7 @@ color: #83C727
 .second-image{
 width: 200px;
 height:160px;
-top: 270px;
+top: 280px;
 border-radius: 32px;
 position: absolute;
 }
@@ -242,7 +244,7 @@ position: absolute;
 .third-image{
 width: 180px;
 height: 160px;
-top: 270px;
+top: 280px;
 left: 210px;
 border-radius: 32px;
 position:absolute;
@@ -251,7 +253,7 @@ position:absolute;
 .forth-image{
 width: 180px;
 height: 160px;
-top: 270px;
+top: 280px;
 left: 420px;
 border-radius: 32px;
 position: absolute;
@@ -353,6 +355,7 @@ position: absolute;
   color: #83c727;
   letter-spacing: 1px;
   text-align: center;
+  justify-content: space-between;
 }
 .title{
   font-size: 30px;
@@ -376,16 +379,21 @@ position: absolute;
 
 .images {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   gap: 40px;
-  width: 527px;
-  height: 220px;
-  margin-left: 50px;
-  margin-top: 50px;
-  border: 1px solid #dce6f0;
+  width: 100%;
+  margin: auto;
+  margin-left: 100px;
   border-radius: 16px;
+  margin-right: 20px;
 }
+
+.images img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
 
 .p1:hover {
   text-decoration: underline;
