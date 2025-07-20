@@ -4,10 +4,10 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="logo">
           <img src="src/assets/logo-smait 1.png" id="navbar-logo" />
-          <p>STUDENT SYNC</p>
+          <p className="navbar-p">STUDENT SYNC</p>
         </div>
-        <div className="home">
-          <h5 className="navbar-home">home</h5>
+        <div className="navbar-home">
+          <h5 className="home-navbar">home</h5>
         </div>
         <div className="add-student">
           <h5 className="navbar-add">add student</h5>
