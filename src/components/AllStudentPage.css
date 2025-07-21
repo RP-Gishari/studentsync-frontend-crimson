@@ -3,6 +3,10 @@
   padding-left: 40px;
   padding-top: 80px;
 }
+.form-submit{
+   display: flex;
+   align-Items: center;
+}
 .search_bar {
   margin-top: 70px;
   margin-left: 600px;
@@ -45,5 +49,3 @@
 .all_student a {
   text-decoration: none;
 }
-
-

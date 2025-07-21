@@ -25,7 +25,7 @@ function StudentTable({ students }) {
           <tr key={student.id}>
             <td>
               <img src="src/assets/ari-shojaei-IAvYMUhYSGA-unsplash.png" />
-              {student.first_name?.slice(0, 10)}
+              {student.first_name?.slice(0, 7)}
             </td>
             <td>
               {student.first_name} {student.last_name}

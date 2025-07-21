@@ -1,11 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import Cards from "./components/cards";
 import StudentList from "./pages/StudentList";
 import StudentTable from "./components/StudentTable";
 import AllStudentPage from "./components/AllStudentPage";
 import AddStudent from "./components/AddStudent";
-import GetStudent from "./components/GetStudent";
 
 import "./App.css";
 import StudentById from "./pages/OneStudent";

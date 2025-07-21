@@ -13,7 +13,7 @@ const AllStudentPage = () => {
   const handleSearch = (e) => {
     e.preventDefault();
 
-    const nameQuery = searchName.trim().toLowerCase();
+    const names = searchName.trim().toLowerCase();
 
     const matchedStudent = students.find((s) => {
       const first = s.first_name.toLowerCase();
@@ -21,9 +21,7 @@ const AllStudentPage = () => {
       const full = `${first} ${last}`;
 
       return (
-        first.includes(nameQuery) ||
-        last.includes(nameQuery) ||
-        full.includes(nameQuery)
+        first.includes(names) || last.includes(names) || full.includes(names)
       );
     });
 
@@ -33,21 +31,23 @@ const AllStudentPage = () => {
       alert("No matching student found.");
     }
   };
+
+  const handleInput = (e) => {
+    setSearchName(e.target.value);
+  };
+
   return (
     <div className="all_student">
       <Link to="/">
         <p className="all">All student</p>
       </Link>
-      <form
-        onSubmit={handleSearch}
-        style={{ display: "flex", alignItems: "center" }}
-      >
+      <form className="form-submit" onSubmit={handleSearch}>
         <input
           type="text"
           className="search_bar"
           placeholder="Enter student name"
           value={searchName}
-          onChange={(e) => setSearchName(e.target.value)}
+          onChange={handleInput}
         />
       </form>
 
