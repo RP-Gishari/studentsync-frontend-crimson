@@ -5,8 +5,10 @@ import StudentList from "./pages/StudentList";
 import StudentTable from "./components/StudentTable";
 import AllStudentPage from "./components/AllStudentPage";
 import AddStudent from "./components/AddStudent";
+import GetStudent from "./components/GetStudent";
 
 import "./App.css";
+import StudentById from "./pages/OneStudent";
 
 const App = () => {
   return (
@@ -23,6 +25,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<StudentList />} />
             <Route path="/table" element={<StudentTable />} />
+            <Route path="/students/:id" element={<StudentById />} />
           </Routes>
         </main>
       </div>

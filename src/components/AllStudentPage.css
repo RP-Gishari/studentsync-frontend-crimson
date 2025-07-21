@@ -34,9 +34,16 @@
   margin-top: 70px;
   border: 1px solid;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .add_img {
   width: 16.67px;
   height: 15.83px;
 }
+
+.all_student a {
+  text-decoration: none;
+}
+
+

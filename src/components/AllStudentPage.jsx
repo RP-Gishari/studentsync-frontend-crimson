@@ -1,18 +1,64 @@
-import "./AllStudentPage.css";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import useStudentStore from "../store/studentStore";
+import "./AllStudentPage.css";
+import myImage from "../assets/add-large-line 1.png";
 
 const AllStudentPage = () => {
+  const [searchName, setSearchName] = useState("");
+  const navigate = useNavigate();
+  const { students } = useStudentStore();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+
+    const nameQuery = searchName.trim().toLowerCase();
+
+    const matchedStudent = students.find((s) => {
+      const first = s.first_name.toLowerCase();
+      const last = s.last_name.toLowerCase();
+      const full = `${first} ${last}`;
+
+      return (
+        first.includes(nameQuery) ||
+        last.includes(nameQuery) ||
+        full.includes(nameQuery)
+      );
+    });
+
+    if (matchedStudent) {
+      navigate(`/students/${matchedStudent.id}`);
+    } else {
+      alert("No matching student found.");
+    }
+  };
   return (
     <div className="all_student">
-      <p className="all">All student</p>
-      <input type="text" class="search_bar" placeholder="Search" />
-      <Link to="/Add">
+      <Link to="/">
+        <p className="all">All student</p>
+      </Link>
+      <form
+        onSubmit={handleSearch}
+        style={{ display: "flex", alignItems: "center" }}
+      >
+        <input
+          type="text"
+          className="search_bar"
+          placeholder="Enter student name"
+          value={searchName}
+          onChange={(e) => setSearchName(e.target.value)}
+        />
+      </form>
+
+      <Link to="/add">
         <button className="addbtn">
-          <img className="add_img" src="src/assets/add-large-line 1.png" /> Add
-          student
+          <img className="add_img" src={myImage} alt="Add student" />
+          Add student
         </button>
       </Link>
     </div>
   );
 };
+
 export default AllStudentPage;

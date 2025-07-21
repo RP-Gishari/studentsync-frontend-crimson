@@ -89,7 +89,7 @@ function AddStudentForm({ onCancel }) {
         </div>
 
         <div className="form_actions">
-          <button type="submit" className="add_button">
+          <button type="submit" className="add_button" onSubmit={handleSubmit}>
             Add
           </button>
           <button type="button" className="cancel_button" onClick={onCancel}>
