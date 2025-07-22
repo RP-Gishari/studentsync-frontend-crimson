@@ -3,7 +3,6 @@
   border-collapse: collapse;
   margin-top: 30px;
   background-color:#FFFFFF;
-  font-family: "Inter", sans-serif;
   font-size: 14px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
@@ -25,10 +24,6 @@
   font-weight: 600;
 }
 
-.table-wrapper tr:nth-child(even) {
-  background-color: #fafafa;
-}
-
 .table-wrapper tr:hover {
   background-color: #f0f0f0;
   transition: background-color 0.2s ease;
@@ -38,11 +33,15 @@
   width: 50px;
   height: 50px;
   border-radius: 6px;
-  object-fit: cover;
 }
-.vector {
-  padding: 10px;
-  cursor: pointer;
+.vector img{
+ width: 26px;
+height: 34px;
+opacity: 1;
+top: 1356px;
+left: 1650px;
+border-width: 2px;
+
 }
 .divider{
   width: 100%;
