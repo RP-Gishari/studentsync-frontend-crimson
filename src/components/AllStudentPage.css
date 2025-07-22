@@ -7,7 +7,7 @@
    display: flex;
    align-Items: center;
 }
-.search_bar {
+.search-bar {
   margin-top: 70px;
   margin-left: 600px;
   background-image: url("src/assets/search-line 2.png");
@@ -18,11 +18,13 @@
   padding-left: 36px;
   height: 40px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 15px;
   font-size: 14px;
+  background-color:#F4F4F4;
 }
-.all_student {
+.all-student {
   display: flex;
+  background-color:#FFFFFF;
 }
 .addbtn {
   color: white;
@@ -39,13 +41,14 @@
   border: 1px solid;
   border-radius: 8px;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.add_img {
+.add-img {
   width: 16.67px;
   height: 15.83px;
 }
 
-.all_student a {
+.all-student a {
   text-decoration: none;
 }

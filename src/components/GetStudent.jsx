@@ -2,6 +2,7 @@ import "./GetStudent.css";
 import { useState } from "react";
 import myImage from "../assets/Ellipse 11.png";
 import useStudentStore from "../store/studentStore";
+import { Link } from "react-router-dom";
 
 const GetStudent = ({ oneStudent }) => {
   const { updateStudent } = useStudentStore();
@@ -111,6 +112,7 @@ const GetStudent = ({ oneStudent }) => {
         <p className="active">{edit.email}</p>
         <input type="checkbox" className="checkbox" />
         <span className="active">Last active: 1 month ago</span>
+        <Link to={"/"}></Link>
       </footer>
       <button className="back">
         {" "}

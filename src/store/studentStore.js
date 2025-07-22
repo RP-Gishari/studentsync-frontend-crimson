@@ -104,7 +104,27 @@ const useStudentStore = create((set, get) => ({
   // Delete student
   deleteStudent: async (id) => {
     set({ loading: true, error: null });
-    // implementation goes here
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_API_URL}/students/${id}`,
+        {
+          method: "DELETE",
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to delete student");
+      }
+      const updatedStudents = get().students.filter(
+        (student) => student.id !== id,
+      );
+      set({ students: updatedStudents, loading: false });
+    } catch (error) {
+      set({
+        error: error.message || "Request failed",
+        loading: false,
+      });
+    }
   },
 }));
 
