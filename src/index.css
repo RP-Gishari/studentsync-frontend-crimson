@@ -1,105 +1,104 @@
-
-.navbar-container{
+.navbar-container {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.logo{
-width: 272px;
-height: 80px;
-top: 32px;
-left: 170px;
-padding: 16px;
-gap: 16px;
-display: flex;
-margin-right: 550px;
-box-sizing: border-box
+.logo {
+  width: 272px;
+  height: 80px;
+  top: 32px;
+  left: 170px;
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  margin-right: 550px;
+  box-sizing: border-box;
 }
 
-#navbar-logo{
-width: 48px;
-height: 48px;
+#navbar-logo {
+  width: 48px;
+  height: 48px;
 }
 
-.navbar-p{
-width: 176px;
-height: 36px;
-font-family: "poppins", sans-serif;
-font-weight: bold;
-font-size: 20px;
-line-height: 100%;
-letter-spacing: 0%;
-padding-top:7px;
-color:#004B2F
+.navbar-p {
+  width: 176px;
+  height: 36px;
+  font-family: "poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-top: 7px;
+  color: #004b2f;
 }
 
-.navbar-home{
-width: 81px;
-height: 56px;
-top: 44px;
-left: 1229px;
-padding: 16px;
-gap: 8px;
+.navbar-home {
+  width: 81px;
+  height: 56px;
+  top: 44px;
+  left: 1229px;
+  padding: 16px;
+  gap: 8px;
 }
 
-.home-navbar{
-width: 49px;
-height: 24px;
-font-family: Poppins, sans-serif;
-font-weight: 600px;
-font-style: SemiBold;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-color: #83C727;
+.home-navbar {
+  width: 49px;
+  height: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600px;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #83c727;
 }
 
-.add-student{
+.add-student {
   width: 137px;
-height: 56px;
-top: 44px;
-left: 1381px;
-padding: 16px;
-gap: 8px;
+  height: 56px;
+  top: 44px;
+  left: 1381px;
+  padding: 16px;
+  gap: 8px;
 }
 
-.navbar-add{
+.navbar-add {
   width: 105px;
-height: 24px;
-font-family: Poppins, sans-serif;
-font-weight: 500px;
-font-style: Medium;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-color: #686868;
+  height: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500px;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #686868;
 }
 
-.all-student{
+.all-student {
   display: flex;
   width: 177px;
-height: 56px;
-top: 44px;
-left: 1589px;
-gap: 8px;
-border-radius: 8px;
-border-width: 3px;
-padding-top: 16px;
-padding-right: 40px;
-padding-bottom: 16px;
-padding-left: 40px;
-border: solid 3px #83C727
+  height: 56px;
+  top: 44px;
+  left: 1589px;
+  gap: 8px;
+  border-radius: 8px;
+  border-width: 3px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  border: solid 3px #83c727;
 }
 
-.navbar-all{
-font-family: Poppins, sans-serif;
-font-weight: 600px;
-font-style: SemiBold;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
-color: #83C727
+.navbar-all {
+  font-family: Poppins, sans-serif;
+  font-weight: 600px;
+  font-style: SemiBold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #83c727;
 }
 
 
@@ -112,13 +111,19 @@ color: #83C727
   margin-bottom: 100px;
   gap: 10px;
 }
+
+@media screen and (max-width: 480px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .text-container {
   position: relative;
-  width:557px;
+  width: 557px;
   height: 388px;
   margin-top: 44px;
   margin-left: 30px;
-
 }
 
 .h3-hero {
@@ -234,30 +239,30 @@ color: #83C727
   position: absolute;
 }
 
-.second-image{
-width: 200px;
-height:160px;
-top: 280px;
-border-radius: 32px;
-position: absolute;
+.second-image {
+  width: 200px;
+  height: 160px;
+  top: 280px;
+  border-radius: 32px;
+  position: absolute;
 }
 
-.third-image{
-width: 180px;
-height: 160px;
-top: 280px;
-left: 210px;
-border-radius: 32px;
-position:absolute;
+.third-image {
+  width: 180px;
+  height: 160px;
+  top: 280px;
+  left: 210px;
+  border-radius: 32px;
+  position: absolute;
 }
 
-.forth-image{
-width: 180px;
-height: 160px;
-top: 280px;
-left: 420px;
-border-radius: 32px;
-position: absolute;
+.forth-image {
+  width: 180px;
+  height: 160px;
+  top: 280px;
+  left: 420px;
+  border-radius: 32px;
+  position: absolute;
 }
 @media (max-width: 1024px) {
   .navbar-container {
@@ -413,36 +418,10 @@ position: absolute;
   object-fit: cover;
   border-radius: 8px;
 }
-@media (max-width: 768px) {
-.img1,
-.img2,
-.image3 {
-  display:none;
-}
- .secondCard{
-    display: none;
-  }
-  .firstCard,
-.thirdCard{
 
-  width:auto;
-  height: auto;
-  margin-bottom:-2rem;
-  }
-  .hp1 p {
-  display: flex;
-  align-items: center;
-  text-align:left;
-  font-size:medium;
-  color:rgba(64, 64, 64, 1);
-  font-weight: 400;
-
-  
- }
-}
 
 /*gallery styling*/
- .gallery {
+.gallery {
   margin-top: 30px;
   font-size: 24px;
   color: #83c727;
@@ -450,7 +429,7 @@ position: absolute;
   text-align: center;
   justify-content: space-between;
 }
-.title{
+.title {
   font-size: 30px;
   font-weight: 600;
   color: #004b2f;
@@ -487,7 +466,6 @@ position: absolute;
   border-radius: 8px;
 }
 
-
 .p1:hover {
   text-decoration: underline;
   color: #83c727;
@@ -504,7 +482,7 @@ position: absolute;
   text-decoration: underline;
   color: #83c727;
 }
-.the-ps{
+.the-ps {
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
@@ -525,81 +503,13 @@ position: absolute;
   height: 24px;
   margin-top: 15px;
 } 
-@media (max-width: 768px) {
-.gall{
-  display:none;
-}
-
- }
 
 
-@media (max-width: 768px) {
-  .allCards {
-    flex-direction: column;
-    align-items: center;
-  }
+/* foote styling*/
 
-  .images {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .more {
-    margin-left: 0;
-    text-align: right;
-    margin-top: 10px;
-  }
-
-  .moreDiv {
-    justify-content: flex-end;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-p {
-    font-size: 1px;
-  }
-
-  .h1-hero {
-    font-size: 24px;
-  }
-
-  .h3-hero {
-    font-size: 20px;
-  }
-
-  .p1-hero {
-    font-size: 16px;
-  }
-
-  .vibrants,
-  .managements {
-    font-size: 18px;
-  }
-
-  .title {
-    font-size: 20px;
-  }
-
-  .paragraph {
-    font-size: 14px;
-  }
-
-  .more {
-    font-size: 10px;
-  }
-}
-
-
-/* footer styling*/
 .foot{
-  margin-top:15.625rem;
-  background-color:rgba(109, 179, 231, 0.04);
- font-weight: 400;
-  height: 22.625rem;
-  width: 79.29rem;
+  margin-top:73px;
+  background-color: hsl(180, 50%, 96%);
   display: block;
    color: rgba(64,64, 64, 1);
   font-family:'poppins',;
@@ -607,73 +517,58 @@ position: absolute;
   bottom:0;
 }
 .our-address{
-  font-size: 1em;
-  padding-bottom: 0.9375rem;
-  margin-left:5.9375rem;
+  font-family:Arial, sans-serif;
+  font-size: 0.75em;
+  padding: 15px;
+  margin-left:95px;
 }
 
 .contact-us{
-  font-size: 1em;
-  padding: 0.625rem;
-   margin-left:13.75rem;
-   margin-top: -5rem;
+  font-family:Arial, sans-serif;
+  font-size: 0.75em;
+  padding: 10px;
+   margin-left:300px;
 }
 .social-media{
-  font-size: 1em;
-  padding: rem;
-   margin-left:6.25rem;
-     margin-top: -5rem;
+  font-family:Arial, sans-serif;
+  font-size: 0.75em;
+  padding: 10px;
+   margin-left:100px;
 }
 .p1-footer{
-  font-size: 1.5em;
-  color:rgba(0,75,47,1);
+  font-family:Arial;
+  font-size: 1em;
+  color:rgba(2, 50, 1, 0.804);
 }
 .p2-footer{
-  font-size: 1em;
-  color: rgba(131,199, 39, 1);
-   padding-bottom:0.73rem;
+  font-family:Arial;
+  font-size: 0.7em;
+  color: rgb(11, 211, 11);
   
 }
 .hed h1, .hed h4 {
-    margin-left:6rem;
-    margin-top:-1.5rem;
-    padding-top:3.73rem;
+    margin-left:112px;
+    margin-top:-40px;
+    padding-top:60px;
    }
 
 .cop{ 
-  margin-left: 4rem;
-  width: 72rem;
   text-align: center; 
-  border-top: #686868 solid;
-   font-size:1em;
-   padding-top:1.25rem;
-   margin-top: 2rem;
-   padding-bottom:0.9375rem;
-   margin-bottom:-14rem;
-}
+   font-size:0.75em;
+   border-top: 2px solid rgba(0, 0, 0, 0.158);
+   padding-top:20px;
+   padding-bottom:15px;
+   }
    .home{
    display: flex;
   
    }
    .Image{
-width: 2rem;
-height: 2rem;
-padding:0.3125rem;
-margin-bottom:-0.47rem;
-margin-left: -0.3rem;
-
+width: 24px;
+height: 24px;
+padding-right:5px;
+margin-bottom:-4px;
    }
    .gasabo{
-    margin-left:1.5rem;
+    margin-left:24px;
    }
-   @media (max-width: 768px) {
- .foot{
-  display:none;
-}
- }
-  @media (max-width: 480px) {
- .foot{
-  display:none;
-}
- }
-  
