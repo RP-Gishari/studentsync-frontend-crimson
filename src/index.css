@@ -3,19 +3,6 @@
   display: flex;
   justify-content: space-between;
 }
-
-.logo {
-  width: 272px;
-  height: 80px;
-  top: 32px;
-  left: 170px;
-  padding: 16px;
-  gap: 16px;
-  display: flex;
-  margin-right: 550px;
-  box-sizing: border-box;
-}
-
 #navbar-logo {
   width: 48px;
   height: 48px;
