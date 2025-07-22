@@ -11,16 +11,18 @@ const App = () => {
   return (
     <Router>
       <div className="app-container">
-        <div>
-          <AllStudentPage />
-        </div>
-
         <main className="main-content">
           <Routes>
             <Route path="/add" element={<AddStudent />} />
-          </Routes>
-          <Routes>
-            <Route path="/" element={<StudentList />} />
+            <Route
+              path="/"
+              element={
+                <>
+                  <AllStudentPage />
+                  <StudentList />
+                </>
+              }
+            />
             <Route path="/table" element={<StudentTable />} />
             <Route path="/students/:id" element={<StudentById />} />
           </Routes>

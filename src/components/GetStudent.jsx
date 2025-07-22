@@ -2,6 +2,7 @@ import "./GetStudent.css";
 import { useState } from "react";
 import myImage from "../assets/Ellipse 11.png";
 import useStudentStore from "../store/studentStore";
+import { Link } from "react-router-dom";
 
 const GetStudent = ({ oneStudent }) => {
   const { updateStudent } = useStudentStore();
@@ -109,7 +110,9 @@ const GetStudent = ({ oneStudent }) => {
           My email address: <strong>{edit.email}</strong>
         </p>
         <span>Last active: 1 month ago</span>
-        <button className="back">Go back</button>
+        <Link to={"/"}>
+          <button className="back">Go back</button>
+        </Link>
       </footer>
     </div>
   );
