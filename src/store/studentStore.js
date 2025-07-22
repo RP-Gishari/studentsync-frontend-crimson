@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { create } from "zustand";
 import { API } from "../lib/api";
+
 const useStudentStore = create((set, get) => ({
   students: [],
   student: {},
@@ -69,7 +70,35 @@ const useStudentStore = create((set, get) => ({
   // Update student
   updateStudent: async (id, studentData) => {
     set({ loading: true, error: null });
-    // implementation goes here
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_API_URL}/students/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(studentData),
+        },
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to update student");
+      }
+
+      const result = await response.json();
+
+      set((state) => ({
+        student: result.data,
+        students: state.students.map((s) => (s.id === id ? result.data : s)),
+        loading: false,
+      }));
+    } catch (error) {
+      set({
+        error: error.message || "Request failed",
+        loading: false,
+      });
+    }
   },
 
   // Delete student

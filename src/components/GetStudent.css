@@ -38,24 +38,40 @@
   color: #5e5e5e;
 }
 
-.profile_column p {
+.profile_column  {
   margin: 4px 0 12px;
   font-size: 15px;
   font-weight: 400;
+  
 }
 
 .edit_button {
-  margin-top: 24px;
+  margin-top: 20px;
   padding: 10px 20px;
   background-color: #83c727;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
+  height:32px;
+  width: 124px;
   cursor: pointer;
+
 }
 
 .profile_footer {
   margin-top: 28px;
   font-size: 14px;
   color: #666;
+}
+.profile_column input{
+  width: 500px;
+  height: 33px; 
+  border: 1 px #F9F9F9 ;
+  border-radius: 5px;
+  border: none;
+
+}
+.imgBtn{
+  display: flex;
+gap: 52em;
 }
