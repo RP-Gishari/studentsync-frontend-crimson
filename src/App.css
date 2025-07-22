@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-primary: #83c727;
+  --primary-color: #f8f7fd;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,6 +21,10 @@ body {
     sans-serif;
   background-color: #f8f7fd;
   color: #2d2d2d;
+}
+
+html, body {
+  height: 100%;
 }
 
 @media (hover: none) and (pointer: coarse) {
@@ -31,80 +40,69 @@ body {
 }
 
 .app-container {
-  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
 }
+
+/* Navigation */
 
 .navbar {
-  background-color: #ffffff;
-  width: 100vw;
-  box-shadow: 0 4px 6px rgba(107, 70, 193, 0.06);
-  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: sticky;
+  justify-content: space-around;
+  height: 7rem;
+  overflow: hidden;
+  padding: 1rem 0;
   top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid rgba(107, 70, 193, 0.1);
+  z-index: 1001;
+  background-color: var(--primary-color);
 }
 
-.nav-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+.navbar-logo {
   display: flex;
-  justify-content: space-between;
+  gap: 4px;
+  justify-content: center;
   align-items: center;
 }
 
-.nav-brand .brand-link {
-  text-decoration: none;
-  color: #6b46c1;
-  font-size: 1.25rem;
-  font-weight: 600;
+.navbar-list {
   display: flex;
+  list-style-type: none;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
 }
 
-.brand-icon {
-  font-size: 1.5rem;
+.navbar-list-item {
+  font-size: 16px;
+  margin-left: 20px
 }
 
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
+.navbar-action{
+  padding: 16px 40px;
+  border-radius: 8px;
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
 }
 
-.nav-link {
-  text-decoration: none;
-  color: #4a5568;
-  font-weight: 500;
-  transition: color 0.2s ease;
+@media screen and (max-width: 480px) {
+
 }
 
-.nav-link:hover {
-  color: #6b46c1;
-}
+/* Main Content */
 
-.add-student-btn {
-  background-color: #6b46c1;
-  border: 2px solid #6b46c1;
-  color: white;
-  padding: 0.5rem 1.25rem;
-  border-radius: 0.75rem;
-  transition: all 0.2s ease;
-  font-weight: 500;
-}
-
-.add-student-btn:hover {
-  background: transparent;
-  color: #6b46c1;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(107, 70, 193, 0.15);
+.home-container {
+  display: grid;
+  grid-template-rows: 1fr;
 }
 
 .main-content {
-  padding: 2rem;
-  max-width: 1200px;
+  padding: 1rem;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -127,6 +125,8 @@ body {
   font-size: 1.1rem;
   opacity: 0.9;
 }
+
+/* Student List */
 
 .student-list-container {
   padding: 1rem;
@@ -184,7 +184,9 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 1024px) {
+/*  */
+
+@media screen and (max-width: 1024px) {
   .main-content {
     padding: 1.5rem;
   }
@@ -242,7 +244,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .nav-brand .brand-text {
     font-size: 1.1rem;
   }
@@ -250,6 +252,7 @@ body {
   .welcome-banner {
     padding: 1.5rem 1rem;
     margin-bottom: 1.5rem;
+    color: blue;
   }
 
   .welcome-banner h1 {
@@ -269,5 +272,11 @@ body {
 
   .view-link {
     padding: 0.2rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
   }
 }

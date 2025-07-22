@@ -1,22 +1,26 @@
+import { useNavigate, NavLink, Link } from "react-router-dom";
+
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="landing-page">
-      <div className="navbar-container">
-        <div className="logo">
-          <img src="src/assets/logo-smait 1.png" id="navbar-logo" />
-          <p className="navbar-p">STUDENT SYNC</p>
-        </div>
-        <div className="navbar-home">
-          <h5 className="home-navbar">home</h5>
-        </div>
-        <div className="add-student">
-          <h5 className="navbar-add">add student</h5>
-        </div>
-        <div className="all-student">
-          <h5 className="navbar-all">all students</h5>
-        </div>
-      </div>
-    </div>
+    <nav className="navbar">
+      <header className="navbar-logo" onClick={navigate("/")}>
+        <img src="src/assets/logo-smait 1.png" id="navbar-logo" />
+        <span>STUDENT SYNC</span>
+      </header>
+      <ul className="navbar-list">
+        <li className="navbar-list-item" onClick={navigate("/")}>
+          home
+        </li>
+        <li className="navbar-list-item" onClick={navigate("/new")}>
+          add student
+        </li>
+        <li className="navbar-action" onClick={navigate("/students")}>
+          All Students
+        </li>
+      </ul>
+    </nav>
   );
 };
 export default Navbar;
