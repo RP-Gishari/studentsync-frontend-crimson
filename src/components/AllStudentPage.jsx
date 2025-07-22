@@ -37,14 +37,14 @@ const AllStudentPage = () => {
   };
 
   return (
-    <div className="all_student">
+    <div className="all-student">
       <Link to="/">
         <p className="all">All student</p>
       </Link>
       <form className="form-submit" onSubmit={handleSearch}>
         <input
           type="text"
-          className="search_bar"
+          className="search-bar"
           placeholder="Enter student name"
           value={searchName}
           onChange={handleInput}
@@ -53,7 +53,7 @@ const AllStudentPage = () => {
 
       <Link to="/add">
         <button className="addbtn">
-          <img className="add_img" src={myImage} alt="Add student" />
+          <img className="add-img" src={myImage} alt="Add student" />
           Add student
         </button>
       </Link>

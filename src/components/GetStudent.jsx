@@ -3,7 +3,6 @@ import myImage from "../assets/Ellipse 11.png";
 
 const GetStudent = ({ oneStudent }) => {
   if (!oneStudent) return <p>Student not found</p>;
-
   return (
     <div className="profile_container">
       <header className="profile_header">
