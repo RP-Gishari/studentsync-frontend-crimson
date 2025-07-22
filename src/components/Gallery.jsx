@@ -1,7 +1,7 @@
 const Gallery = () => {
   return (
     <section>
-      <div>
+      <div className="gall">
         <h4 className="gallery">Gallery</h4>
         <h2 className="title">The GYM college student lifestyle</h2>
         <br />
@@ -11,7 +11,6 @@ const Gallery = () => {
             <p className="p1">All</p>
           </div>
           <div className="the-ps">
-            {" "}
             <p className="p2">Foundations period </p>
           </div>
           <div className="the-ps">

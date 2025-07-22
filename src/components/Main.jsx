@@ -15,6 +15,7 @@ function Main() {
                   alt="Transformation image"
                   className="img1"
                 />
+
                 <b>Digital transformation</b>
               </p>
               <br />
@@ -49,7 +50,7 @@ function Main() {
             <div className="hp1">
               <p>
                 <img src="src/assets/Frame 363 (1).png" className="image3" />
-                <b>Race toward goodness</b>
+                <b className="b2">Race toward goodness</b>
               </p>
               <br />
 

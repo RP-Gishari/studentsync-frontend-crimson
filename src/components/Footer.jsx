@@ -52,6 +52,9 @@ function Footer() {
           <img src="src/assets/Facebook.png" alt="Facebook" className="Image" />
           <img src="src/assets/Youtube.png" alt="Youtube" className="Image" />
         </div>
+        <p className="line">
+          <hr />
+        </p>
       </div>
       <div className="cop">&copy; Studentsync.All rights reserved.</div>
     </footer>
