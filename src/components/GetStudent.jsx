@@ -38,7 +38,7 @@ const GetStudent = ({ oneStudent }) => {
         <h2>Welcome back</h2>
         <p>{new Date().toDateString()}</p>
       </header>
-
+      <div className="borders"></div>
       <section className="profile_card">
         <div className="imgBtn">
           <img
@@ -106,14 +106,19 @@ const GetStudent = ({ oneStudent }) => {
       </section>
 
       <footer className="profile_footer">
-        <p>
-          My email address: <strong>{edit.email}</strong>
-        </p>
-        <span>Last active: 1 month ago</span>
-        <Link to={"/"}>
-          <button className="back">Go back</button>
-        </Link>
+        <h6 className="adress">
+          <b>My email address: </b>
+        </h6>
+        <p className="active">{edit.email}</p>
+        <input type="checkbox" className="checkbox" />
+        <span className="active">Last active: 1 month ago</span>
+        <Link to={"/"}></Link>
       </footer>
+      <button className="back">
+        {" "}
+        <img src="/src/assets/Vector (1).png" />
+        <span>Go back</span>
+      </button>
     </div>
   );
 };

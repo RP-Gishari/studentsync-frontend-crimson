@@ -2,11 +2,18 @@
   padding: 32px;
   font-family: "Poppins", sans-serif;
   color: #2e2e2e;
+  
 }
 
 .profile_header h2 {
   margin-bottom: 6px;
   font-weight: 600;
+}
+
+.profile_header {
+  margin-bottom: 80px;
+  margin-left: -20px;
+  margin-top: 0%;
 }
 
 .profile_card {
@@ -45,6 +52,7 @@
   
 }
 
+
 .edit_button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -74,4 +82,44 @@
 .imgBtn{
   display: flex;
 gap: 52em;
+}
+.back{
+  background-color: white;
+  color: #83c727;
+  border: 1px white;
+  border: none;
+  margin-top:20px;
+  gap: 1em;
+  margin-left: 30px;
+}
+.back img{
+  width: 18px;
+  height: 8px;
+}
+.adress{
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-bottom:20px;
+
+} 
+.active{
+  margin-bottom: 5px;
+    margin-left: 30px;
+}
+.checkbox{
+  background-color: #83c727;
+}
+.borders{
+  width: 1100px;
+height: 81px;
+opacity: 1;
+top: 135px;
+left: 104px;
+border-top-left-radius: 21px;
+border-top-right-radius: 21px;
+background: linear-gradient(90deg, rgba(131, 199, 39, 0.77) 0%, rgba(170, 255, 56, 0.32) 100%);
+
+
 }
